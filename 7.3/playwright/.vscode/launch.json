@@ -1,0 +1,51 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Kubernetes Pod (NodeJS)",
+            "type": "cloudcode.kubernetes",
+            "request": "attach",
+            "language": "Node",
+            "debugPort": 9229,
+            "podSelector": {
+                "app": "deployment-name"
+            },
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "Path to the Remote Directory Containing the Program"
+        },
+        
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "https://netology.ru/?modal=sign_in",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "https://netology.ru/?modal=sign_in",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Запустить Chrome на localhost",
+            "url": "https://netology.ru/?modal=sign_in",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
